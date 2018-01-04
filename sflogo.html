@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <div id="site-body" class="container-fluid">
+    <div id="site-body" class="container-fluid h-100 no-padding no-margin">
         <!--mobile menu bar-->
-        <div id="nav-bar" class="no-padding row justify-content-between position-fixed w-100">
-            <div class="el no-padding no-margin">
+        <div id="nav-bar" class="row justify-content-between position-fixed w-100 no-padding no-margin">
+            <div class="el">
                 <svg class="" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="-100 -100 820 820">
                     <title>sflogo</title>
                     <g>
@@ -33,12 +33,18 @@
                     <path d="M311.59,309.91L247.01,309.91" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
                 </svg>
             </div>
-            <div class="el no-padding no-margin">
+            <div class="el">
                 <svg width="90" height="90" viewBox="-100 -100 820 820">
                     <path d="M143,146L477,146" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
                     <path d="M143,310L477,310" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
                     <path d="M143,475L477,475" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
                 </svg>
+            </div>
+            <div id="nav-drop" class="position-absolute">
+                <ul class="">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                </ul>
             </div>
         </div>
         <!--
@@ -49,9 +55,9 @@
         </div>
         -->
         <!--content-->
-        <div id="content-container" class="container h-100">
-            <div class="row">
-                
+        <div id="content-container" class="container-fluid h-100 w-100 no-padding">
+            <div class="row no-margin crop">
+                <img src="cgi-bin/woodsytrabelwip3.png" class="fill-screen img-center">
             </div>
         </div>
     </div>

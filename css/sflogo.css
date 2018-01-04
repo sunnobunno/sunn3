@@ -1,12 +1,10 @@
 html {
     background-color: black;
-    height: 100%;
 }
 
 body {
-    background-color: #fff;
-    color: grey;
-    
+    background-color: black;
+    color: black;
 }
 
 .no-padding {
@@ -47,18 +45,49 @@ body {
     height: 90px;
 }
 
+#nav-drop {
+    background-color: black;
+    color: white;
+    z-index: 1000;
+    height: 200px;
+    width: 100px;
+    right: 0;
+}
+
+#nav-drop ul {
+    margin-top: 90px;
+    list-style: none;
+    font-family: 
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+#nav-drop ul li {
+    padding-top: 5px;
+    width: 100%;
+}
+
 #test1 .a {
     background: #000;
     height: 100px;
 }
 
 #content-container {
-    
     z-index: 1;
 }
 
-#content-container img {
-    position: absolute;
-    right: -50px;
-    bottom: -100px;
+.crop {
+    overflow: hidden;
+}
+
+.fill-screen {
+    height: 100.0vh;
+    width: auto;
+}
+
+.img-center {
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
