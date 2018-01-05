@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <div id="drop-menu" class="">
+        
+    </div>
     <div id="site-body" class="container-fluid h-100 no-padding no-margin">
         <!--mobile menu bar-->
         <div id="nav-bar" class="row justify-content-between position-fixed w-100 no-padding no-margin">
@@ -25,27 +28,33 @@
                     <title>sflogo</title>
                     <g>
                         <path d="M310,600C149.84,600,20,470.16,20,310S149.84,20,310,20c160.16,0,290,129.84,290,290S470.16,600,310,600Z" transform="translate(1.59)"
-                        style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
+                        style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
                     </g>
-                    <path d="M311.59,309.9l55.17,85.19A69.25,69.25,0,1,1,250.5,470.38" transform="translate(0)" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
-                    <path d="M311.59,309.9,257.25,226a69.25,69.25,0,0,1,116.26-75.29" transform="translate(0)" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
-                    <path d="M311.59,309.91L376.5,309.91" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
-                    <path d="M311.59,309.91L247.01,309.91" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
+                    <path d="M311.59,309.9l55.17,85.19A69.25,69.25,0,1,1,250.5,470.38" transform="translate(0)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
+                    <path d="M311.59,309.9,257.25,226a69.25,69.25,0,0,1,116.26-75.29" transform="translate(0)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
+                    <path d="M311.59,309.91L376.5,309.91" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
+                    <path d="M311.59,309.91L247.01,309.91" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 40px"/>
                 </svg>
             </div>
-            <div class="el">
-                <svg width="90" height="90" viewBox="-100 -100 820 820">
-                    <path d="M143,146L477,146" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
-                    <path d="M143,310L477,310" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
-                    <path d="M143,475L477,475" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
-                </svg>
-            </div>
+            <a href="#">
+                <div id="hamburg-menu" class="el">
+                    <svg width="90" height="90" viewBox="-100 -100 820 820">
+                        <path d="M143,146L477,146" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
+                        <path d="M143,310L477,310" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
+                        <path d="M143,475L477,475" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 0;stroke-width: 40px"/>
+                    </svg>
+                </div>
+            </a>
+            <!--
             <div id="nav-drop" class="position-absolute">
                 <ul class="">
                     <li>HOME</li>
-                    <li>ABOUT</li>
+                    <li>DESIGN</li>
+                    <li>ART</li>
+                    <li>MUSIC</li>
                 </ul>
             </div>
+            -->
         </div>
         <!--
         <div id="test1" class="row">
@@ -55,14 +64,23 @@
         </div>
         -->
         <!--content-->
+
+
+
         <div id="content-container" class="container-fluid h-100 w-100 no-padding">
+            <!--
+            <div id="square1" class="testsquare"></div>
+            <div id="square2" class="testsquare"></div>
+            <div id="square3" class="testsquare"></div>
+            <!--
             <div class="row no-margin crop">
                 <img src="cgi-bin/woodsytrabelwip3.png" class="fill-screen img-center">
             </div>
+            -->
         </div>
     </div>
-    
-    
+
+
 
     <!--loading splash screen-->
     <div id="splash-logo" class="splash container-fluid position-fixed d-flex h-100 align-items-center justify-content-center">
@@ -96,16 +114,19 @@
             </g>
         </svg>
         <div class="splash-bg splash-bg-top">
-            
+
         </div>
         <div class="splash-bg splash-bg-bottom">
-            
+
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <script src="scripts/sflogo.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/movingsquares.js"></script>
 </body>
 
 </html>

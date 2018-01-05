@@ -15,6 +15,8 @@ $(function() {
     
     $('#site-body').hide();
     //$('.splash').hide();
+    //$('#splash-logo').hide();
+    //$('.splash-bg').hide();
     
     var phaseNul = anime({
         targets: '#phase-nul path',
@@ -36,12 +38,12 @@ $(function() {
         targets: '#phase-zero path',
         
         strokeDashoffset: [
-            { value: 290.0, duration: 1000, delay: 700, easing: 'easeInOutQuart' },
+            { value: 290.0, duration: 700, delay: 400, easing: 'easeInOutQuart' },
         ],
         
         strokeOpacity: [
-            { value: 1.0, duration: 1, delay: 700 },
-            { value: 0.0, duration: 1, delay: 1700 }
+            { value: 1.0, duration: 1, delay: 400 },
+            { value: 0.0, duration: 1, delay: 1400 }
         ]
         
     });
@@ -49,7 +51,7 @@ $(function() {
     var phaseOne = anime({
         targets: '#phase-one path',
         strokeWidth: '40px',
-        delay: 1400,
+        delay: 800,
         duration: 1000,
         elasticity: 600
     });
@@ -57,30 +59,30 @@ $(function() {
     var phaseTwo = anime({
         targets: '#phase-two path',
         strokeOpacity: [
-            { value: 1.0, duration: 1, delay: 1700 }
+            { value: 1.0, duration: 1, delay: 1000 }
         ],
         strokeDashoffset: [
-            { value: 0, duration: 2000, easing: 'easeInOutQuart', delay: 1700 }
+            { value: 0, duration: 1600, easing: 'easeInOutQuart', delay: 1000 }
         ],
     });
     
     var phaseThree = anime({
         targets: '#phase-three path',
         strokeOpacity: [
-            { value: 1.0, duration: 1, delay: 2000 }
+            { value: 1.0, duration: 1, delay: 1200 }
         ],
         strokeDashoffset: [
-            { value: 0, duration: 2000, easing: 'easeInOutQuart', delay: 2000 }
+            { value: 0, duration: 1500, easing: 'easeInOutQuart', delay: 1200 }
         ],
     });
     
     var phaseFour = anime({
         targets: '#phase-four path',
         strokeOpacity: [
-            { value: 1.0, duration: 1, delay: 2600 }
+            { value: 1.0, duration: 1, delay: 1300 }
         ],
         strokeDashoffset: [
-            { value: 0, duration: 700, easing: 'easeInOutQuart', delay: 2600 }
+            { value: 0, duration: 1000, easing: 'easeInOutQuart', delay: 1300 }
         ],
     });
     
