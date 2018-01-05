@@ -17,15 +17,23 @@ $(function() {
     });
     */
     
+    $('#drop-menu').hide();
+    
     $('#hamburg-menu').click(function() {
         
         if ($('#drop-menu').css('display') == 'none' ) {
-            $('#drop-menu').slideDown(500);
-            
+            $('#drop-menu').slideDown({
+                duration: 1000,
+                easing: "easeInOutQuad"
+            });
+            $('#drop-menu').css('display', 'flex');
             navElColor.restart();
         }
         else {
-            $('#drop-menu').slideUp(500);
+            $('#drop-menu').slideUp({
+                duration: 1000,
+                easing: "easeInOutQuad"
+            });
             navElColor.seek(201);
             navElColor.play();
         }
@@ -35,8 +43,8 @@ $(function() {
         autoplay: false,
         targets: '#nav-bar path',
         stroke: [
-            { value: '#fff', duration: 200, easing: 'easeInOutSine' },
-            { value: '#000', duration: 200, easing: 'easeInOutSine', delay: 350}
+            { value: '#000', duration: 200, easing: 'easeInOutSine' },
+            { value: '#fff', duration: 200, easing: 'easeInOutSine', delay: 800}
         ],
         update: function(anim) {
             //console.log(anim.currentTime);

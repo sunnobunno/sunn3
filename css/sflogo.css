@@ -10,10 +10,12 @@
 
 html {
     background-color: white;
+    height: 100%;
 }
 
 body {
-
+    font-family: 'Varela Round', sans-serif;
+    height: 100%;
 }
 
 .no-padding {
@@ -45,6 +47,13 @@ body {
     bottom: 0;
 }
 
+#site-body {
+    background-image: url(../cgi-bin/woodsytrabelwip3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #nav-bar {
     z-index: 1001;
 }
@@ -62,9 +71,29 @@ body {
     z-index: 1000;
     position: fixed;
     display: none;
-    background-color: #000;
+    background-color: #fff;
+    color: '#fff';
     width: 100%;
     height: 100%;
+}
+
+#drop-menu ul {
+    list-style: none;
+}
+
+#drop-menu ul li {
+    font-size: 50px;
+}
+
+#drop-menu a {
+    text-decoration: none;
+    color: #999;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+}
+
+#drop-menu ul a:hover {
+    color: #000;
 }
 
 #nav-drop {
@@ -100,6 +129,7 @@ body {
 
 #content-container {
     z-index: 1;
+    height: 100%;
 }
 
 .crop {
