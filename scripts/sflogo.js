@@ -15,8 +15,8 @@ $(function() {
         }
     });
     
-    $('#site-body').hide();
-    //$('.splash').hide();
+    //$('#site-body').hide();
+    $('.splash').hide();
     
     var phaseNul = anime({
         targets: '#phase-nul path',
@@ -100,7 +100,7 @@ $(function() {
         easing: 'easeInOutCubic'
     });
     
-    var fadeoutPromise = phaseThree.finished.then(fadeoutLogo);
+    //var fadeoutPromise = phaseThree.finished.then(fadeoutLogo);
     
     function fadeoutLogo() {
         console.log('fade');
