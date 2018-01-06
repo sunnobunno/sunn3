@@ -36,6 +36,7 @@ $(function() {
             });
             navElColor.seek(201);
             navElColor.play();
+
         }
     });
     
@@ -52,5 +53,5 @@ $(function() {
                 navElColor.pause();
             }
         }
-    }); 
+    });
 })
