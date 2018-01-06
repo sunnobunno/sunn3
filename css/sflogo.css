@@ -61,7 +61,6 @@ body {
     width: 120%;
     top: -10%;
     left: -10%;
-    background-image: url(../cgi-bin/woodsytrabelwip3.png);
     background-position: center;
     background-size: cover;
     position: fixed;
@@ -83,11 +82,17 @@ body {
     z-index: 1100;
 }
 
+#nav-bar a {
+    text-decoration: none;
+}
+
 #copyright {
     position: absolute;
     font-size: 12px;
     color: #aaa;
     bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #drop-menu {
@@ -113,6 +118,10 @@ body {
     color: #999;
     transition: color 1s;
     -webkit-transition: color 1s;
+}
+
+a {
+    outline: 0;
 }
 
 #drop-menu ul a:hover {

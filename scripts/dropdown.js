@@ -17,12 +17,8 @@ $(function() {
                 duration: 1000,
                 easing: "easeInOutQuad"
             });
-            var delayedFade1 = window.setTimeout(fadeToWhite, 500);
+            $('#nav-bar path').css({'stroke': 'white', 'transition': 'stroke 1s'});
         }
     });
     
-    function fadeToWhite() {
-        $('#nav-bar path').css({'stroke': 'white', 'transition': 'stroke 1s'});
-    }
-
 })
